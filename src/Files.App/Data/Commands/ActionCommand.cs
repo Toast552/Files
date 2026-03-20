@@ -69,6 +69,10 @@ namespace Files.App.Data.Commands
 			}
 		}
 
+		/// <inheritdoc/>
+		public string AccessKey
+			=> Action.AccessKey;
+
 		private HotKeyCollection hotKeys;
 		/// <inheritdoc/>
 		public HotKeyCollection HotKeys
@@ -111,20 +115,25 @@ namespace Files.App.Data.Commands
 		public bool IsAccessibleGlobally
 			=> Action.IsAccessibleGlobally;
 
-		public ActionCommand(CommandManager manager, CommandCodes code, IAction action)
+		public ActionCommand(CommandCodes code, IAction action)
 		{
 			Code = code;
 			Action = action;
 			Icon = action.Glyph.ToIcon();
 			FontIcon = action.Glyph.ToFontIcon();
 			ThemedIconStyle = action.Glyph.ToThemedIconStyle();
-			hotKeys = CommandManager.GetDefaultKeyBindings(action);
-			DefaultHotKeys = CommandManager.GetDefaultKeyBindings(action);
+			hotKeys = GetDefaultKeyBindings(action);
+			DefaultHotKeys = GetDefaultKeyBindings(action);
 
 			if (action is INotifyPropertyChanging notifyPropertyChanging)
 				notifyPropertyChanging.PropertyChanging += Action_PropertyChanging;
 			if (action is INotifyPropertyChanged notifyPropertyChanged)
 				notifyPropertyChanged.PropertyChanged += Action_PropertyChanged;
+		}
+
+		private static HotKeyCollection GetDefaultKeyBindings(IAction action)
+		{
+			return new(action.HotKey, action.SecondHotKey, action.ThirdHotKey, action.MediaHotKey);
 		}
 
 		/// <inheritdoc/>
@@ -178,6 +187,9 @@ namespace Files.App.Data.Commands
 					OnPropertyChanging(nameof(LabelWithHotKey));
 					OnPropertyChanging(nameof(AutomationName));
 					break;
+				case nameof(IAction.AccessKey):
+					OnPropertyChanging(nameof(AccessKey));
+					break;
 				case nameof(IToggleAction.IsOn) when IsToggle:
 					OnPropertyChanging(nameof(IsOn));
 					break;
@@ -195,6 +207,9 @@ namespace Files.App.Data.Commands
 					OnPropertyChanged(nameof(Label));
 					OnPropertyChanged(nameof(LabelWithHotKey));
 					OnPropertyChanged(nameof(AutomationName));
+					break;
+				case nameof(IAction.AccessKey):
+					OnPropertyChanged(nameof(AccessKey));
 					break;
 				case nameof(IToggleAction.IsOn) when IsToggle:
 					OnPropertyChanged(nameof(IsOn));

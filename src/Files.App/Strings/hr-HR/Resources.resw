@@ -301,7 +301,7 @@
     <value>Unesite naziv stavke</value>
   </data>
   <data name="CreateNewItemTitle" xml:space="preserve">
-    <value>Create new {0}</value>
+    <value>Stvaranje novih {0}</value>
   </data>
   <data name="LightTheme" xml:space="preserve">
     <value>Svijetlo</value>
@@ -1773,7 +1773,7 @@
     <value>Oznaka datoteke</value>
   </data>
   <data name="SettingsOpenItemsWithOneClick" xml:space="preserve">
-    <value>Otvaranje stavki jednim klikom</value>
+    <value>Otvaranje datoteka jednim klikom</value>
   </data>
   <data name="FolderPath" xml:space="preserve">
     <value>Putanja do mape</value>
@@ -1980,7 +1980,7 @@
     <value>Slike</value>
   </data>
   <data name="UpdateFiles" xml:space="preserve">
-    <value>Ažuriraj datoteke</value>
+    <value>Ažuriraj Files</value>
   </data>
   <data name="FileTags" xml:space="preserve">
     <value>Oznake</value>
@@ -2032,12 +2032,12 @@
   </data>
   <data name="ReviewFilesSubtitle" xml:space="preserve">
     <value>Sviđa vam se Files? Ostavite recenziju u Microsoft Storeu.</value>
-  </data>  
+  </data>
   <data name="SponsorSubtitle" xml:space="preserve">
     <value>Sviđa vam se Files? Podržite projekt na GitHubu.</value>
   </data>
   <data name="Sponsor" xml:space="preserve">
-    <value>Sponzor</value>
+    <value>Sponzoriraj</value>
   </data>
   <data name="RateUs" xml:space="preserve">
     <value>Ocijenite nas</value>
@@ -2072,8 +2072,8 @@
   <data name="Lockscreen" xml:space="preserve">
     <value>Zaključani zaslon</value>
   </data>
-  <data name="OpenFolderWithOneClickColumnsLayout" xml:space="preserve">
-    <value>Otvaranje mapa jednim klikom u prikazu stupaca</value>
+  <data name="OpenFolderWithOneClick" xml:space="preserve">
+    <value>Otvaranje mapa jednim klikom</value>
   </data>
   <data name="OpeningItems" xml:space="preserve">
     <value>Otvaranje stavki</value>
@@ -2179,6 +2179,21 @@
   </data>
   <data name="DoNotSplit" xml:space="preserve">
     <value>Ne dijeli</value>
+  </data>
+  <data name="Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="DictionarySize" xml:space="preserve">
+    <value>Dictionary size</value>
+  </data>
+  <data name="WordSize" xml:space="preserve">
+    <value>Word size</value>
+  </data>
+  <data name="EstimatedMemoryUsage" xml:space="preserve">
+    <value>Estimated memory usage: {0}</value>
+  </data>
+  <data name="AvailableMemory" xml:space="preserve">
+    <value>Available memory: {0}</value>
   </data>
   <data name="CD" xml:space="preserve">
     <value>CD</value>
@@ -2673,7 +2688,7 @@
     <value>Sortiraj stavke po izvornoj mapi</value>
   </data>
   <data name="SortByDateDeletedDescription" xml:space="preserve">
-    <value>Sort items by date deleted</value>
+    <value>Sortiraj stavke po datumu brisanja</value>
   </data>
   <data name="SortAscendingDescription" xml:space="preserve">
     <value>Sortiraj stavke uzlazno</value>
@@ -2703,28 +2718,28 @@
     <value>Grupiraj stavke po vrsti</value>
   </data>
   <data name="GroupBySyncStatusDescription" xml:space="preserve">
-    <value>Group items by sync status</value>
+    <value>Grupiraj stavke po statusu sinkronizacije</value>
   </data>
   <data name="GroupByTagDescription" xml:space="preserve">
     <value>Grupiraj stavke po oznakama</value>
   </data>
   <data name="GroupByOriginalFolderDescription" xml:space="preserve">
-    <value>Group items by original folder</value>
+    <value>Grupiraj stavke po izvornoj mapi</value>
   </data>
   <data name="GroupByDateDeletedDescription" xml:space="preserve">
-    <value>Group items by date deleted</value>
+    <value>Grupiraj stavke po datumu brisanja</value>
   </data>
   <data name="GroupByFolderPathDescription" xml:space="preserve">
-    <value>Group items by folder path</value>
+    <value>Grupiraj stavke po putanji mape</value>
   </data>
   <data name="GroupAscendingDescription" xml:space="preserve">
-    <value>Sort groups in ascending order</value>
+    <value>Sortiraj grupe uzlazno</value>
   </data>
   <data name="GroupDescendingDescription" xml:space="preserve">
-    <value>Sort groups in descending order</value>
+    <value>Sortiraj grupe silazno</value>
   </data>
   <data name="ToggleGroupDirectionDescription" xml:space="preserve">
-    <value>Toggle group sort direction</value>
+    <value>Promijeni smjer sortiranja grupa</value>
   </data>
   <data name="NewTabDescription" xml:space="preserve">
     <value>Otvori novu karticu</value>
@@ -2745,22 +2760,22 @@
     <value>Dupliciraj odabranu karticu</value>
   </data>
   <data name="CloseTabsToTheLeftCurrentDescription" xml:space="preserve">
-    <value>Close tabs to the left of current tab</value>
+    <value>Zatvori kartice lijevo od trenutne kartice</value>
   </data>
   <data name="CloseTabsToTheLeftSelectedDescription" xml:space="preserve">
-    <value>Close tabs to the left of selected tab</value>
+    <value>Zatvori kartice lijevo od odabrane kartice</value>
   </data>
   <data name="CloseTabsToTheRightCurrentDescription" xml:space="preserve">
-    <value>Close tabs to the right of current tab</value>
+    <value>Zatvori kartice desno od trenutne kartice</value>
   </data>
   <data name="CloseTabsToTheRightSelectedDescription" xml:space="preserve">
-    <value>Close tabs to the right of selected tab</value>
+    <value>Zatvori kartice desno od odabrane kartice</value>
   </data>
   <data name="CloseOtherTabsCurrentDescription" xml:space="preserve">
-    <value>Close tabs other than current tab</value>
+    <value>Zatvori kartice osim trenutne kartice</value>
   </data>
   <data name="CloseOtherTabsSelectedDescription" xml:space="preserve">
-    <value>Close tabs other than selected tab</value>
+    <value>Zatvori kartice osim odabrane kartice</value>
   </data>
   <data name="CloseAllTabsDescription" xml:space="preserve">
     <value>Zatvori sve kartice uključujući trenutnu</value>
@@ -2778,13 +2793,13 @@
     <value>Zatvori trenutnu karticu</value>
   </data>
   <data name="CloseActivePaneDescription" xml:space="preserve">
-    <value>Close the active pane</value>
+    <value>Zatvori aktivni panel</value>
   </data>
   <data name="FocusOtherPane" xml:space="preserve">
-    <value>Focus other pane</value>
+    <value>Fokusiraj drugi panel</value>
   </data>
   <data name="FocusOtherPaneDescription" xml:space="preserve">
-    <value>Switch focus to the other pane</value>
+    <value>Prebaci fokus na drugi panel</value>
   </data>
   <data name="ToggleSidebar" xml:space="preserve">
     <value>Toggle the sidebar</value>
@@ -2834,15 +2849,15 @@
     <comment>Key name for hotkeys in menus. Use abbreviation if possible.</comment>
   </data>
   <data name="Key.Left" xml:space="preserve">
-    <value>Left</value>
+    <value>Lijevo</value>
     <comment>Key name for hotkeys in menus. Use abbreviation if possible.</comment>
   </data>
   <data name="Key.Right" xml:space="preserve">
-    <value>Right</value>
+    <value>Desno</value>
     <comment>Key name for hotkeys in menus. Use abbreviation if possible.</comment>
   </data>
   <data name="Key.Down" xml:space="preserve">
-    <value>Down</value>
+    <value>Dolje</value>
     <comment>Key name for hotkeys in menus. Use abbreviation if possible.</comment>
   </data>
   <data name="Key.Up" xml:space="preserve">
@@ -3132,6 +3147,15 @@
   <data name="UncommittedChanges" xml:space="preserve">
     <value>You have uncommitted changes on this branch. What would you like to do with them?</value>
   </data>
+  <data name="MergeInProgress" xml:space="preserve">
+    <value>You have an ongoing merge with unresolved conflicts. Please resolve the conflicts or abort the merge to switch branches.</value>
+  </data>
+  <data name="AbortMergeAndSwitch" xml:space="preserve">
+    <value>Abort merge and switch to '{0}'</value>
+  </data>
+  <data name="StayAndResolveConflicts" xml:space="preserve">
+    <value>Stay on '{0}' and resolve conflicts</value>
+  </data>
   <data name="SwitchBranch" xml:space="preserve">
     <value>Switch branch</value>
   </data>
@@ -3323,7 +3347,7 @@
     <value>Sort items by path</value>
   </data>
   <data name="OpenDirectoryInNewPaneDescription" xml:space="preserve">
-    <value>Open selected directory in a new pane</value>
+    <value>Otvori odabrani direktorij u novom panelu</value>
   </data>
   <data name="OpenDirectoryInNewTabDescription" xml:space="preserve">
     <value>Otvori odabrani direktorij u novoj kartici</value>
@@ -3342,7 +3366,7 @@
     <comment>{0} is the drive letter.</comment>
   </data>
   <data name="InvalidCommand" xml:space="preserve">
-    <value>Invalid command</value>
+    <value>Nevažeća naredba</value>
   </data>
   <data name="InvalidCommandContent" xml:space="preserve">
     <value>'{0}' is not recognized as a command.</value>
@@ -3837,10 +3861,10 @@
     <value>Edit permissions</value>
   </data>
   <data name="BackgroundRunningNotificationBody" xml:space="preserve">
-    <value>Files is still running in the background to improve startup performance.</value>
+    <value>Files i dalje radi u pozadini kako bi poboljšao brzinu pokretanja.</value>
   </data>
   <data name="BackgroundRunningNotificationHeader" xml:space="preserve">
-    <value>Where did Files go?</value>
+    <value>Gdje je Files nestao?</value>
   </data>
   <data name="QuestionsAndDiscussions" xml:space="preserve">
     <value>Pitanja i rasprave</value>
@@ -4051,31 +4075,31 @@
     <comment>Setting that controls if the toolbar is shown in the main view</comment>
   </data>
   <data name="TabActions" xml:space="preserve">
-    <value>Tab actions menu</value>
+    <value>Izbornik radnji kartica</value>
   </data>
   <data name="SplitPaneVertically" xml:space="preserve">
     <value>Podijeli okomito</value>
   </data>
   <data name="AddVerticalPaneDescription" xml:space="preserve">
-    <value>Split pane vertically</value>
+    <value>Podijeli panel okomito</value>
   </data>
   <data name="SplitPaneHorizontally" xml:space="preserve">
     <value>Podijeli vodoravno</value>
   </data>
   <data name="SplitPaneHorizontallyDescription" xml:space="preserve">
-    <value>Split pane horizontally</value>
+    <value>Podijeli panel vodoravno</value>
   </data>
   <data name="ArrangePanesVertically" xml:space="preserve">
-    <value>Arrange vertically</value>
+    <value>Poredaj okomito</value>
   </data>
   <data name="ArrangePanesVerticallyDescription" xml:space="preserve">
-    <value>Arrange panes vertically</value>
+    <value>Poredaj panele okomito</value>
   </data>
   <data name="ArrangePanesHorizontally" xml:space="preserve">
-    <value>Arrange horizontally</value>
+    <value>Poredaj vodoravno</value>
   </data>
   <data name="ArrangePanesHorizontallyDescription" xml:space="preserve">
-    <value>Arrange panes horizontally</value>
+    <value>Poredaj panele vodoravno</value>
   </data>
   <data name="SplitPane" xml:space="preserve">
     <value>Podijeli panel</value>
@@ -4084,7 +4108,7 @@
     <value>Prikaži gumb za radnje kartica u naslovnoj traci</value>
   </data>
   <data name="ArrangePanes" xml:space="preserve">
-    <value>Arrange panes</value>
+    <value>Poredaj panele</value>
   </data>
   <data name="DualPaneSplitDirection" xml:space="preserve">
     <value>Zadani smjer podjele panela</value>
@@ -4123,7 +4147,7 @@
     <value>Prikaži opciju za stvaranje alternativnog podatkovnog toka</value>
   </data>
   <data name="CreateAlternateDataStream" xml:space="preserve">
-    <value>Create alternate data stream</value>
+    <value>Stvori alternativni tok podataka</value>
   </data>
   <data name="CreateAlternateDataStreamDescription" xml:space="preserve">
     <value>Create alternate data stream for the selected {0, plural, one {item} other {items}}</value>
@@ -4132,10 +4156,10 @@
     <value>Enter data stream name</value>
   </data>
   <data name="ErrorCreatingDataStreamTitle" xml:space="preserve">
-    <value>There was an error creating the alternate data stream</value>
+    <value>Došlo je do pogreške pri stvaranju alternativnog toka podataka</value>
   </data>
   <data name="ErrorCreatingDataStreamDescription" xml:space="preserve">
-    <value>Please note that alternate data streams only work on drives formatted as NTFS.</value>
+    <value>Napomena Alternativni tokovi podataka rade samo na pogonima formatiranima kao NTFS.</value>
   </data>
   <data name="DataStreamsAreHiddenTitle" xml:space="preserve">
     <value>Alternativni tokovi podataka su trenutno skriveni</value>
@@ -4279,10 +4303,10 @@
     <value>Show collapsed path breadcrumbs</value>
   </data>
   <data name="BreadcrumbBarChevronButtonToolTip" xml:space="preserve">
-    <value>Show folders in {0}</value>
+    <value>Prikaži mape u {0}</value>
   </data>
   <data name="BreadcrumbBarRootChevronButtonToolTip" xml:space="preserve">
-    <value>Show folders in Home</value>
+    <value>Prikaži mape u Početno</value>
   </data>
   <data name="NoCommandsFound" xml:space="preserve">
     <value>There are no commands containing {0}</value>
@@ -4298,7 +4322,7 @@
   </data>
   <data name="Signatures" xml:space="preserve">
     <value>Potpisi</value>
-   </data>
+  </data>
   <data name="SignatureList" xml:space="preserve">
     <value>Popis potpisa</value>
   </data>
@@ -4331,5 +4355,26 @@
   </data>
   <data name="FailedToOpenLogFile" xml:space="preserve">
     <value>Nije moguće otvoriti datoteku zapisnika</value>
+  </data>
+  <data name="ShowStatusBar" xml:space="preserve">
+    <value>Prikaži statusnu traku</value>
+  </data>
+  <data name="OnlyInColumnsView" xml:space="preserve">
+    <value>Samo u prikazu stupaca</value>
+  </data>
+  <data name="CreateNewFile" xml:space="preserve">
+    <value>New {0}</value>
+  </data>
+  <data name="EnableSmoothScrolling" xml:space="preserve">
+    <value>Omogući glatko pomicanje</value>
+  </data>
+  <data name="Scrolling" xml:space="preserve">
+    <value>Pomicanje</value>
+  </data>
+  <data name="ShowPinToSideBar" xml:space="preserve">
+    <value>Prikaži opciju Prikvači na alatnu traku Brzi pristup</value>
+  </data>
+  <data name="ShowPinToStart" xml:space="preserve">
+    <value>Prikaži opciju Prikvači na izbornik Start</value>
   </data>
 </root>

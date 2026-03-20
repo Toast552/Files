@@ -1773,7 +1773,7 @@
     <value>Метка</value>
   </data>
   <data name="SettingsOpenItemsWithOneClick" xml:space="preserve">
-    <value>Открывать файлы и папки одним нажатием</value>
+    <value>Открывать файлы одним щелчком</value>
   </data>
   <data name="FolderPath" xml:space="preserve">
     <value>Путь к папке</value>
@@ -2032,7 +2032,7 @@
   </data>
   <data name="ReviewFilesSubtitle" xml:space="preserve">
     <value>Нравится Files? Пожалуйста, оцените приложение в Microsoft Store.</value>
-  </data>  
+  </data>
   <data name="SponsorSubtitle" xml:space="preserve">
     <value>Вам нравится Files? Пожалуйста, подумайте о поддержке проекта на GitHub.</value>
   </data>
@@ -2072,8 +2072,8 @@
   <data name="Lockscreen" xml:space="preserve">
     <value>Экран блокировки</value>
   </data>
-  <data name="OpenFolderWithOneClickColumnsLayout" xml:space="preserve">
-    <value>Открывать папки одним кликом в макете Столбцы</value>
+  <data name="OpenFolderWithOneClick" xml:space="preserve">
+    <value>Открывать папки одним кликом</value>
   </data>
   <data name="OpeningItems" xml:space="preserve">
     <value>Открытие объектов</value>
@@ -2179,6 +2179,21 @@
   </data>
   <data name="DoNotSplit" xml:space="preserve">
     <value>Не разбивать</value>
+  </data>
+  <data name="Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="DictionarySize" xml:space="preserve">
+    <value>Dictionary size</value>
+  </data>
+  <data name="WordSize" xml:space="preserve">
+    <value>Word size</value>
+  </data>
+  <data name="EstimatedMemoryUsage" xml:space="preserve">
+    <value>Estimated memory usage: {0}</value>
+  </data>
+  <data name="AvailableMemory" xml:space="preserve">
+    <value>Available memory: {0}</value>
   </data>
   <data name="CD" xml:space="preserve">
     <value>CD</value>
@@ -3132,6 +3147,15 @@
   <data name="UncommittedChanges" xml:space="preserve">
     <value>У вас есть незакоммиченные изменения в этой ветке. Что вы хотите с ними сделать?</value>
   </data>
+  <data name="MergeInProgress" xml:space="preserve">
+    <value>У вас есть текущее слияние с неразрешенными конфликтами. Пожалуйста, устраните конфликты или прервите слияние для переключения ветвей.</value>
+  </data>
+  <data name="AbortMergeAndSwitch" xml:space="preserve">
+    <value>Прервать слияние и переключиться на '{0}'</value>
+  </data>
+  <data name="StayAndResolveConflicts" xml:space="preserve">
+    <value>Оставайтесь на '{0}' и разрешите конфликты</value>
+  </data>
   <data name="SwitchBranch" xml:space="preserve">
     <value>Сменить ветку</value>
   </data>
@@ -3622,7 +3646,7 @@
     <comment>Shown in a StatusCenter card.</comment>
   </data>
   <data name="StatusCenter_CopyDiscovery_Header" xml:space="preserve">
-    <value>Discovered {0, plural, one {# item} other {# items}}</value>
+    <value>Обнаружен {0, plural, one {# предмет} other {# предметы}}</value>
     <comment>Shown in a StatusCenter card during file discovery phase.</comment>
   </data>
   <data name="StatusCenter_DecompressCanceled_Header" xml:space="preserve">
@@ -4298,7 +4322,7 @@
   </data>
   <data name="Signatures" xml:space="preserve">
     <value>Подписи</value>
-   </data>
+  </data>
   <data name="SignatureList" xml:space="preserve">
     <value>Список подписей</value>
   </data>
@@ -4331,5 +4355,26 @@
   </data>
   <data name="FailedToOpenLogFile" xml:space="preserve">
     <value>Не удалось открыть файл журнала</value>
+  </data>
+  <data name="ShowStatusBar" xml:space="preserve">
+    <value>Показать строку состояния</value>
+  </data>
+  <data name="OnlyInColumnsView" xml:space="preserve">
+    <value>Только в виде столбцов</value>
+  </data>
+  <data name="CreateNewFile" xml:space="preserve">
+    <value>Новый {0}</value>
+  </data>
+  <data name="EnableSmoothScrolling" xml:space="preserve">
+    <value>Enable smooth scrolling</value>
+  </data>
+  <data name="Scrolling" xml:space="preserve">
+    <value>Scrolling</value>
+  </data>
+  <data name="ShowPinToSideBar" xml:space="preserve">
+    <value>Show option to Pin to Sidebar</value>
+  </data>
+  <data name="ShowPinToStart" xml:space="preserve">
+    <value>Show option to Pin to the Start Menu</value>
   </data>
 </root>

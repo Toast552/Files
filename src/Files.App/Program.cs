@@ -6,7 +6,9 @@ using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml;
 using Microsoft.Windows.AppLifecycle;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Text;
+using Windows.Win32.UI.WindowsAndMessaging;
 using Windows.ApplicationModel.Activation;
 using Windows.Storage;
 
@@ -56,7 +58,7 @@ namespace Files.App
 			WinRT.ComWrappersSupport.InitializeComWrappers();
 
 			// We are about to do the first WinRT server call, in case the WinRT server is hanging
-			// we need to kill the server if there is no other Files instances already running
+			// we need to kill the server if there are no other Files instances already running
 
 			static bool ProcessPathPredicate(Process p)
 			{
@@ -95,13 +97,29 @@ namespace Files.App
 			}
 
 			// NOTE:
-			//  This has been commentted out since out-of-proc WinRT server seems not to support elevetion.
+			//  This has been commented out since out-of-proc WinRT server seems not to support elevation.
 			//  For more info, see the GitHub issue (#15384).
 			// Now we can do the first WinRT server call
 			//Server.AppInstanceMonitor.StartMonitor(Environment.ProcessId);
 
 			var OpenTabInExistingInstance = ApplicationData.Current.LocalSettings.Values.Get("OpenTabInExistingInstance", true);
-			var activatedArgs = AppInstance.GetCurrent().GetActivatedEventArgs();
+
+			AppActivationArguments activatedArgs;
+			try
+			{
+				activatedArgs = AppInstance.GetCurrent().GetActivatedEventArgs();
+			}
+			catch (COMException ex) when (ex.HResult == unchecked((int)0x80040154))
+			{
+				Windows.Win32.PInvoke.MessageBox(
+					default,
+					Constants.Startup.MissingRuntimeMessage,
+					Constants.Startup.MissingRuntimeTitle,
+					MESSAGEBOX_STYLE.MB_ICONERROR);
+
+				throw new InvalidOperationException(Constants.Startup.MissingRuntimeMessage, ex);
+			}
+
 			var commandLineArgs = GetCommandLineArgs(activatedArgs);
 
 			if (commandLineArgs is not null)

@@ -6,13 +6,14 @@ namespace Files.App.Actions
 	[GeneratedRichCommand]
 	internal sealed partial class SetAsLockscreenBackgroundAction : BaseSetAsAction
 	{
-		private readonly IWindowsWallpaperService WindowsWallpaperService = Ioc.Default.GetRequiredService<IWindowsWallpaperService>();
-
 		public override string Label
 			=> Strings.SetAsLockscreen.GetLocalizedResource();
 
 		public override string Description
 			=> Strings.SetAsLockscreenBackgroundDescription.GetLocalizedResource();
+
+		public string AccessKey
+			=> "L";
 
 		public override RichGlyph Glyph
 			=> new("\uEE3F");

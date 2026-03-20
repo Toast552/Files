@@ -71,6 +71,12 @@ namespace Files.App.Services.Settings
 			set => Set(value);
 		}
 
+		public List<string> PreviousArchiveExtractionLocations
+		{
+			get => Get<List<string>>(null);
+			set => Set(value);
+		}
+
 		public DateTimeFormats DateTimeFormat
 		{
 			get => Get(DateTimeFormats.Application);
@@ -239,6 +245,18 @@ namespace Files.App.Services.Settings
 			set => Set(value);
 		}
 
+		public bool ShowPinToSideBar
+		{
+			get => Get(true);
+			set => Set(value);
+		}
+
+		public bool ShowPinToStart
+		{
+			get => Get(true);
+			set => Set(value);
+		}
+
 		public bool ShowEditTagsMenu
 		{
 			get => Get(true);
@@ -351,6 +369,18 @@ namespace Files.App.Services.Settings
 			set => Set((long)value);
 		}
 
+		public ArchiveDictionarySizes ArchiveDictionarySizesOption
+		{
+			get => (ArchiveDictionarySizes)Get((long)ArchiveDictionarySizes.Auto);
+			set => Set((long)value);
+		}
+
+		public ArchiveWordSizes ArchiveWordSizesOption
+		{
+			get => (ArchiveWordSizes)Get((long)ArchiveWordSizes.Auto);
+			set => Set((long)value);
+		}
+
 		public Dictionary<string, bool> ShowHashesDictionary
 		{
 			get => Get<Dictionary<string, bool>>(null);
@@ -378,6 +408,13 @@ namespace Files.App.Services.Settings
 		public bool ShowFilterHeader
 		{
 			get => Get(false);
+			set => Set(value);
+		}
+
+		/// <inheritdoc/>
+		public bool EnableSmoothScrolling
+		{
+			get => Get(true);
 			set => Set(value);
 		}
 

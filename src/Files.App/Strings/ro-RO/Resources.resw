@@ -1773,7 +1773,7 @@
     <value>Etichetă</value>
   </data>
   <data name="SettingsOpenItemsWithOneClick" xml:space="preserve">
-    <value>Deschidere elemente cu un singur clic</value>
+    <value>Deschidere fișiere cu un singur clic</value>
   </data>
   <data name="FolderPath" xml:space="preserve">
     <value>Cale folder</value>
@@ -2032,7 +2032,7 @@
   </data>
   <data name="ReviewFilesSubtitle" xml:space="preserve">
     <value>Vă place Files? Vă rugăm să luați în considerare lăsarea unei recenzii în Microsoft Store.</value>
-  </data>  
+  </data>
   <data name="SponsorSubtitle" xml:space="preserve">
     <value>Vă place Files? Vă rugăm să luați în considerare susținerea proiectului pe GitHub.</value>
   </data>
@@ -2072,8 +2072,8 @@
   <data name="Lockscreen" xml:space="preserve">
     <value>Ecran de blocare</value>
   </data>
-  <data name="OpenFolderWithOneClickColumnsLayout" xml:space="preserve">
-    <value>Deschidere foldere cu un singur clic în aspectul coloană</value>
+  <data name="OpenFolderWithOneClick" xml:space="preserve">
+    <value>Deschidere foldere cu un singur clic</value>
   </data>
   <data name="OpeningItems" xml:space="preserve">
     <value>Deschidere elemente</value>
@@ -2179,6 +2179,21 @@
   </data>
   <data name="DoNotSplit" xml:space="preserve">
     <value>Nu despărțiți</value>
+  </data>
+  <data name="Auto" xml:space="preserve">
+    <value>Automat</value>
+  </data>
+  <data name="DictionarySize" xml:space="preserve">
+    <value>Dimensiune dicționar</value>
+  </data>
+  <data name="WordSize" xml:space="preserve">
+    <value>Dimensiune cuvânt</value>
+  </data>
+  <data name="EstimatedMemoryUsage" xml:space="preserve">
+    <value>Utilizare estimată a memoriei: {0}</value>
+  </data>
+  <data name="AvailableMemory" xml:space="preserve">
+    <value>Memorie disponibilă: {0}</value>
   </data>
   <data name="CD" xml:space="preserve">
     <value>CD</value>
@@ -3131,6 +3146,15 @@
   </data>
   <data name="UncommittedChanges" xml:space="preserve">
     <value>Aveți modificări neconfirmate în această ramură. Ce doriți să faceți cu ele?</value>
+  </data>
+  <data name="MergeInProgress" xml:space="preserve">
+    <value>Aveți o îmbinare în curs cu conflicte nerezolvate. Vă rugăm să rezolvați conflictele sau să abandonați îmbinarea pentru a comuta ramurile.</value>
+  </data>
+  <data name="AbortMergeAndSwitch" xml:space="preserve">
+    <value>Renunțați la îmbinare și comutați la „{0}”</value>
+  </data>
+  <data name="StayAndResolveConflicts" xml:space="preserve">
+    <value>Rămâneți pe „{0}” și rezolvați conflictele</value>
   </data>
   <data name="SwitchBranch" xml:space="preserve">
     <value>Comutare ramură</value>
@@ -4298,7 +4322,7 @@
   </data>
   <data name="Signatures" xml:space="preserve">
     <value>Semnături</value>
-   </data>
+  </data>
   <data name="SignatureList" xml:space="preserve">
     <value>Listă semnătură</value>
   </data>
@@ -4331,5 +4355,26 @@
   </data>
   <data name="FailedToOpenLogFile" xml:space="preserve">
     <value>Nu s-a putut deschide fișierul jurnal</value>
+  </data>
+  <data name="ShowStatusBar" xml:space="preserve">
+    <value>Afișați bara de stare</value>
+  </data>
+  <data name="OnlyInColumnsView" xml:space="preserve">
+    <value>Doar în Vizualizarea coloane</value>
+  </data>
+  <data name="CreateNewFile" xml:space="preserve">
+    <value>Nou {0}</value>
+  </data>
+  <data name="EnableSmoothScrolling" xml:space="preserve">
+    <value>Activare defilare lină</value>
+  </data>
+  <data name="Scrolling" xml:space="preserve">
+    <value>Defilare</value>
+  </data>
+  <data name="ShowPinToSideBar" xml:space="preserve">
+    <value>Afișați opțiunea de fixare în bara laterală</value>
+  </data>
+  <data name="ShowPinToStart" xml:space="preserve">
+    <value>Afișați opțiunea de fixare în Meniul Start</value>
   </data>
 </root>

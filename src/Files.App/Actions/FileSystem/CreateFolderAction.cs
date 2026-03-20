@@ -14,6 +14,9 @@ namespace Files.App.Actions
 		public string Description
 			=> Strings.CreateFolderDescription.GetLocalizedResource();
 
+		public string AccessKey
+			=> "F";
+
 		public HotKey HotKey
 			=> new(Keys.N, KeyModifiers.CtrlShift);
 
@@ -34,7 +37,7 @@ namespace Files.App.Actions
 		public Task ExecuteAsync(object? parameter = null)
 		{
 			if (context.ShellPage is not null)
-				UIFilesystemHelpers.CreateFileFromDialogResultTypeAsync(AddItemDialogItemType.Folder, null!, context.ShellPage);
+				_ = UIFilesystemHelpers.CreateFileFromDialogResultTypeAsync(AddItemDialogItemType.Folder, null!, context.ShellPage);
 
 			return Task.CompletedTask;
 		}
